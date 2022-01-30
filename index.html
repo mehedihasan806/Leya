@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <title>LeYa Online</title>
+</head>
+<body id="main">
+    <!-- header start -->
+    <header>
+        <div class="container-fluid">
+            <div class="header-content">
+                <div class="menu-toggler-btn">
+                    <!-- <a data-bs-toggle="offcanvas" href="#offcanvasMenu1">
+                        <img src="assets/images/Asset 5.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu1" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="offcanvas-menu-item">
+                                <ul>
+                                    <li><a href="#">Livros</a></li>
+                                    <li><a href="#">Temas</a></li>
+                                    <li><a href="#">Novidades</a></li>
+                                    <li><a href="#">Top Livros</a></li>
+                                    <li><a href="#">Promoções</a></li>
+                                    <li><a href="#">Ler+ / PNL</a></li>
+                                    <li><a href="#">Ebooks</a></li>
+                                    <li><a href="#">Temas</a></li>
+                                    <li><a href="#">Novidades</a></li>
+                                    <li><a href="#">Gratuitos</a></li>
+                                    <li><a href="#">EscrYtos</a></li>
+                                    <li><a href="#">Escolar</a></li>
+                                    <li><a href="#">Livros Escolares</a></li>
+                                    <li><a href="#">Acessos Digitais</a></li>
+                                    <li><a href="#">LeYa Educação</a></li>
+                                    <li><a href="#">Apoio Escolar</a></li>
+                                    <li><a href="#">Ler+ / PNL</a></li>
+                                    <li><a href="#">Ler+/ PNL 2027</a></li>
+                                    <li><a href="#">Professores</a></li>
+                                    <li><a href="#">Promoções</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div> -->
+                      <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="offcanvas-menu-item">
+                            <ul>
+                                <li><a href="#">Livros</a></li>
+                                <li><a href="#">Temas</a></li>
+                                <li><a href="#">Novidades</a></li>
+                                <li><a href="#">Top Livros</a></li>
+                                <li><a href="#">Promoções</a></li>
+                                <li><a href="#">Ler+ / PNL</a></li>
+                                <li><a href="#">Ebooks</a></li>
+                                <li><a href="#">Temas</a></li>
+                                <li><a href="#">Novidades</a></li>
+                                <li><a href="#">Gratuitos</a></li>
+                                <li><a href="#">EscrYtos</a></li>
+                                <li><a href="#">Escolar</a></li>
+                                <li><a href="#">Livros Escolares</a></li>
+                                <li><a href="#">Acessos Digitais</a></li>
+                                <li><a href="#">LeYa Educação</a></li>
+                                <li><a href="#">Apoio Escolar</a></li>
+                                <li><a href="#">Ler+ / PNL</a></li>
+                                <li><a href="#">Ler+/ PNL 2027</a></li>
+                                <li><a href="#">Professores</a></li>
+                                <li><a href="#">Promoções</a></li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Use any element to open the sidenav -->
+                        <span onclick="openNav()">
+                        <img src="assets/images/Asset 5.png" alt="">
+                        </span>
+                </div>
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="user-login dropdown">
+                    <a href="#" id="dropdownMenuLink20" data-bs-toggle="dropdown">
+                        <img src="assets/images/user.png" class="img-fluid" alt="">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink20">
+                        <li><a class="dropdown-item" href="#">Os meus dados</a></li>
+                        <li><a class="dropdown-item" href="#">As minhas encomendas</a></li>
+                        <li><a class="dropdown-item" href="#">Perfis de acesso</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                </div>
+                <div class="search-bar">
+                    <button class="searchbar-large">
+                        <img src="assets/images/search.png" class="img-fluid" alt="">
+                    </button>
+                    <input class="searchbar-large" type="text" placeholder="pesquisa">
+                    <div class="search-sm">
+                        <div class="dropdown">
+                            <button class="" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/search.png" class="img-fluid" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li><button class="dropdown-item" type="button">
+                                  <input type="text" placeholder="pesquisa"></button></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="wish-list">
+                    <a href="#">
+                        <img src="assets/images/wishlist.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="add-to-cart">
+                    <a href="#">
+                        <img src="assets/images/addToCart.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- banner start -->
+    <section class="banner">
+        <div class="container">
+            <div class="row banner-large">
+                <div class="col-lg-4 col-md-6">
+                    <div class="banner-img">
+                        <img src="assets/images/banner.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="banner-content">
+                        <h1>M - Mussolini - O Homem da Providência</h1>
+                        <h3>SCURATI, ANTONIO</h3>
+                        <div class="banner-wishlist">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">
+                                    <img src="assets/images/wish2.png" class="img-fluid" alt="">
+                                </a></li>
+                                <li class="list-inline-item"><a href="#">
+                                    <img src="assets/images/share.png" class="img-fluid" alt="">
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="choose-options">
+                            <h4>Escolha a opção:</h4>
+                            <div class="row">
+                                <div class="col-md-4 align-self-end">
+                                    <div class="choose-op-item">
+                                        <img src="assets/images/Asset 7.png" class="img-fluid" alt="">
+                                        <h6>
+                                            Os eBooks e audiobooks
+mais populares disponíveis
+na subscrição <span>Kobo+e_LeYa</span>
+                                        </h6>
+                                        <a href="#">Experimente Grátis</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 align-self-end">
+                                    <div class="choose-op-item">
+                                        <h5>LIVRO</h5>
+                                        <h2>€24,75 <span>€27,50</span></h2>
+                                        <h6>Poupe €2,75 (10%)</h6>
+                                        <a href="#">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 align-self-end">
+                                    <div class="choose-op-item">
+                                        <h5>eBOOK</h5>
+                                        <h2>€17,99 <span>€19,99</span></h2>
+                                        <h6>Poupe €2,00 (10%)</h6>
+                                        <a href="#">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner for mobile devices -->
+            <div class="row banner-2">
+                <div class="col-5">
+                    <div class="banner-sm-img">
+                        <img src="assets/images/banner.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="banner-sm-content">
+                        <h1>M - Mussolini - O Homem da Providência</h1>
+                        <h3>SCURATI, ANTONIO</h3>
+                        <div class="banner-wishlist">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">
+                                    <img src="assets/images/wish2.png" class="img-fluid" alt="">
+                                </a></li>
+                                <li class="list-inline-item"><a href="#">
+                                    <img src="assets/images/share.png" class="img-fluid" alt="">
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="banner-choose-op-item-2">
+                        <div class="row">
+                            <div class="col-6 align-self-end">
+                                <div class="choose-op-item-2">
+                                    <h5>LIVRO</h5>
+                                                <h2>€24,75 <span>€27,50</span></h2>
+                                                <h6>Poupe €2,75 (10%)</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <div class="choose-up-item-2-btn">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="banner-choose-op-item-2">
+                        <div class="row">
+                            <div class="col-6 align-self-end">
+                                <div class="choose-op-item-2">
+                                    <h5>LIVRO</h5>
+                                                <h2>€24,75 <span>€27,50</span></h2>
+                                                <h6>Poupe €2,75 (10%)</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <div class="choose-up-item-2-btn">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="banner-choose-op-item-2">
+                        <div class="row">
+                            <div class="col-6 align-self-end">
+                                <div class="choose-op-item-2">
+                                    <img src="assets/images/Asset 7.png" class="img-fluid" alt="">
+                                        <h6>
+                                            Os eBooks e audiobooks
+mais populares disponíveis
+na subscrição <span>Kobo+e_LeYa</span>
+                                        </h6>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <div class="choose-up-item-2-btn">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner for mobile devices -->
+        </div>
+    </section>
+    <!-- banner end -->
+    <!-- sinpose start -->
+    <section class="sinopse">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sinpose-heading">
+                        <h2>Sinopse </h2>
+                        <p>Nos primeiros dias de 1925, Benito Mussolini, o jovem presidente do Conselho italiano, tomba inconsciente no seu apartamento. O homem de camisa negra, botas de cano alto e pose altiva, que se prepara para controlar totalmente a vida pública italiana, encontra-se às portas da morte. É esta a cena inicial do segundo volume da epopeia do chefe fascista relatada por Antonio Scurati. M – O Homem da Providência começa onde M – O Filho do Século termina: em 1925, quando Mussolini planeia o passo seguinte do seu projeto de poder absoluto: fundir o seu nome com o do próprio país. <a href="#">Ler mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="sinpose-address">
+                        <h2>Detalhes</h2>
+                        <ul>
+                            <li>ISBN: 9789892352343</li>
+                            <li>Editora: ASA </li>
+                            <li>Ano de Edição / Impressão: 2021 </li>
+                            <li>Idioma: Português </li>
+                            <li>Dimensões: 244 x 165 x 50 mm </li>
+                            <li>Páginas: 672</li>
+                        </ul>
+                        <h2>PROMOÇÕES ATIVAS</h2>
+                        <a href="#">Novidades</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sinpose-yVideo">
+                        <h2>BOOKTRAILER</h2>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/EzxSKepu5U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sinpose end -->
+    <!-- author section start -->
+    <section class="author">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="author-heading">
+                        <h2>O autor </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-5">
+                    <div class="author-img">
+                        <img src="assets/images/author.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-9 col-7">
+                    <div class="author-content d-none d-lg-block">
+                        <h3>ANTONIO SCURATI</h3>
+                        <p>Antonio Scurati nasceu em Nápoles em 1969. Licenciado em Filosofia pela Universidade de Milão, completou a sua formação com uma pós-graduação na Escola de Estudos Superiores de Ciências Sociais de Paris e um doutoramento em Teoria e Análise de Texto na Universidade de Bérgamo. Professor e investigador nessa universidade, coordena o Centro de Estudos de Linguagem da Guerra e da Violência. Desde 2008, é professor associado na Universidade Livre de Línguas e Comunicação de Milão (IULM), com trabalho desenvolvido no Laboratório de Escrita Criativa e no Laboratório de Oralidade e Retórica. É um dos autores italianos mais reputados da sua geração, tendo ganhado, entre outros, o importante Prémio Strega, em 2019, pela autoria de M – O Filho do Século, também publicado pela ASA.</p>
+                    </div>
+                    <div class="author-content d-block d-lg-none">
+                        <p>Antonio Scurati nasceu em Nápoles em 1969. Licenciado em Filosofia pela Universidade de Milão, completou a sua formação com uma pós-graduação na Escola de Estudos Superiores de Ciências Sociais de Paris e um doutoramento em Teoria e Análise de Texto na Universidade de Bérgamo. Professor e investigador nessa universidade, coordena o Centro de Estudos de... <a href="#" style="color: #E30E19;">Ler mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- author section end -->
+    <!-- similar books -->
+    <section class="similar-books">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="similar-book-heading">
+                        <h2><span>LeYa</span> livros semelhantes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Lady Whistledown <br>
+                                tem algo a dizer<br><br>
+                                <span style="font-weight: 400;">Julia Quinn</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Viagens pelo Mundo<br>
+                                Um Guia Irreverente<br><br>
+                                <span style="font-weight: 400;">Anthony Bourdain</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Balada de Veludo <br> <br> <br> 
+
+                                <span style="font-weight: 400;">Jude Deveraux</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Viagens pelo Mundo<br> 
+                                Um Guia Irreverente<br> <br>
+                                <span>Jude Deveraux</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Balada de Veludo <br> <br> <br> 
+
+                                <span>Jude Deveraux</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="load-more-btn">
+                        <a href="#">
+                            <img src="assets/images/arrow.png" class="img-fluid" alt="">
+                            <span>Ver mais</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- similar books -->
+    <!-- books author -->
+    <section class="similar-books">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="similar-book-heading">
+                        <h2><span>LeYa</span> livros do mesmo autor</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Lady Whistledown <br>
+                                tem algo a dizer<br><br>
+                                <span>Julia Quinn</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Viagens pelo Mundo<br>
+                                Um Guia Irreverente<br><br>
+                                <span>Anthony Bourdain</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Balada de Veludo <br> <br> <br> 
+
+                                <span>Jude Deveraux</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Viagens pelo Mundo<br> 
+                                Um Guia Irreverente<br> <br> 
+                                <span>Anthony Bourdain</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <!-- single item  -->
+                <div class="col-lg col-6 col-md-4 text-center">
+                    <div class="single-book-item">
+                        <div class="single-book-img">
+                            <img src="assets/images/book3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="single-book-details">
+                            <h6>Balada de Veludo <br> <br> <br> 
+
+                                <span>Jude Deveraux</span></h6>
+                        </div>
+                        <div class="single-book-price">
+                            <h6>€15,21 <span> €16,90</span></h6>
+                        </div>
+                        <div class="compare-btn">
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="load-more-btn">
+                        <a href="#">
+                            <img src="assets/images/arrow.png" class="img-fluid" alt="">
+                            <span>Ver mais</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- books author -->
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="f-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" class="img-fluid" alt="">
+                        </a>
+                        <div class="f-newsletter">
+                            <h6>Subscreva a nossa newsletter*</h6>
+                            <form action="#">
+                                <input type="email">
+                                <button>Enviar</button>
+                            </form>
+                            <p>* Li e entendi a política de privacidade e aceito receber 
+                                comunicações comerciais personalizadas da LEYA por e-mail.</p>
+                        </div>
+                        <div class="social-icons d-none d-xl-block">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 align-self-center">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="client-support-links">
+                                <h2>Apoio ao Cliente</h2>
+                                <ul>
+                                    <li><a href="#">Contacte-nos</a></li>
+                                    <li><a href="#">Perguntas frequentes</a></li>
+                                    <li><a href="#">Expedição e Entrega</a></li>
+                                    <li><a href="#">Segurança</a></li>
+                                    <li><a href="#">Política de Privacidade</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="client-support-links">
+                                <h2>Links Úteis</h2>
+                                <ul>
+                                    <li><a href="#">Termos e Condições</a></li>
+                                    <li><a href="#">Condições de venda</a></li>
+                                    <li><a href="#">LeYa Educação</a></li>
+                                    <li><a href="#">Livro de reclamações online</a></li>
+                                    <li><a href="#">Mapa do Site</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="client-support-links">
+                                <h2>Quem Somos</h2>
+                                <ul>
+                                    <li><a href="#">Quem somos</a></li>
+                                    <li><a href="#">Livreiros</a></li>
+                                    <li><a href="#">Grupo LeYa</a></li>
+                                    <li><a href="#">Auto-publicação</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="f-address">
+                                <h2>Contactos</h2>
+                                <ul>
+                                    <li>
+                                        <div class="row g-0">
+                                            <div class="col-2">
+                                                <img src="assets/images/map.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                Rua Cidade de Córdova, 2
+                                        2610-038 Alfragide
+                                        Portugal
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row g-0">
+                                            <div class="col-2">
+                                                <img src="assets/images/instagram.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-10">
+                                                info@leyaonline.com
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="social-icons d-block d-xl-none">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- js links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
